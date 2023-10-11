@@ -23,6 +23,7 @@ body * {
 #container {
   width: 360px;
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
 #profile {
@@ -30,12 +31,69 @@ body * {
 }
 
 #profile img {
-  width: 112px;
-  border-radius: 50%;
+  width: 106px;
 }
 
 #profile p {
-  font-weight: 500;
-  line-height: 24px;
-  padding: 24px;
+  font-weight: 600;
+  line-height: 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Lista de Links */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  gap: 16px; /* Espaço entre os elementos*/
+}
+ul li a {
+  display: flex;
+  align-items: center; /* Centraliza dentro da linha do flex */
+  justify-content: center; /* Centraliza os Elementos */
+
+  padding: 16px 24px;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 400;
+
+  transition: background 0.2s;
+}
+/* Selecionando o button */
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+
+/* Lista de links */
+#social-links {
+  display: flex;
+  justify-content: center;
+
+  padding: 24px 0;
+
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
